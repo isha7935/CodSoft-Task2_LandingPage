@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(17, 17, 17);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a50a26;
+}
+
+
+::selection {
+    background-color: #a50a26;
+    color: #000;
+}
+
+span {
+    color: #a50a26;
+    font-weight: 600;
+}
+
+.header {
+    background: url(Images/background.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.header .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.header .nav {
+    height: 90px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4vw;
+}
+
+.header .nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a50a26;
+    cursor: pointer;
+}
+
+.header .nav li {
+    list-style: none;
+    margin: 0 2.3vw;
+}
+
+.header .nav li a {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all ease .3s;
+}
+
+.header .nav li a:hover {
+    color: #a50a26;
+}
+
+.btn {
+    padding: 10px 16px;
+    font-size: .9rem;
+    font-weight: 400;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a50a26;
+    border: 1px solid #a50a26;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 90px);
+    text-align: center;
+}
+
+.banner .box h1 {
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.banner .box h3 {
+    font-size: 2vw;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.banner .box .cta {
+    margin-top: 30px;
+}
+
+.page2 {
+    height: 80vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+}
+
+.page2 h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.page2 .features {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page2 .feature {
+    width: 300px;
+    height: 350px;
+    padding: 14px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    transition: all ease .3s;
+
+}
+
+.page2 .feature .image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page2 .feature:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.page2 .feature img {
+    width: 100%;
+    transition: all ease .3s;
+}
+
+
+.page2 .feature:hover {
+    box-shadow: #a50a2688 0px 8px 24px;
+}
+
+.page2 .feature h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    color: #a50a26;
+}
+
+.page2 .feature p {
+    font-weight: 200;
+    margin-top: .5rem;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.footer {
+    height: 70vh;
+}
+
+.footer .download {
+    height: 120px;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9vw;
+    border-top: 1px solid #a50a26;
+    border-bottom: 1px solid #a50a26;
+}
+
+.footer .download .download-text h1 {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer .download .download-text h3 {
+    color: #fff;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: .5rem;
+}
+
+
+.footer .download .icons i {
+    color: #a50a26;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer .download .icons i:hover {
+    color: #fff;
+}
+
+.footer .contact {
+    background: #000;
+    height: 60vh;
+    display: flex;
+    padding: 2vw 9vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .contact-info h1 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer .contact-form {
+    width: 50%;
+}
+
+.footer .contact-form h3 {
+    color: #fff;
+    margin: 0 0 20px 20px;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.footer .contact-form .form-inline {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer .contact-form input {
+    padding: 14px 14px;
+    width: 16vw;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 200;
+    background: rgb(17, 17, 17);
+    color: #fff;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer .contact-form input:focus {
+    border: 1px solid #a50a26;
+}
+
+.footer .contact-form .form-textarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer .contact-form textarea {
+    width: 88%;
+    outline: none;
+    border: none;
+    padding: 14px 14px;
+    font-size: 1rem;
+    font-weight: 200;
+    background: rgb(17, 17, 17);
+    color: #fff;
+}
+
+.footer .contact-form textarea:focus {
+    border: 1px solid #a50a26;
+}
+
+.footer .contact-form button {
+    margin: 20px 0 0 20px;
+}
+
+.footer .contact-form button i {
+    font-size: .8rem;
+}
+
+.footer .copyright {
+    height: 40px;
+    background-color: #a50a26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .copyright p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
